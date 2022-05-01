@@ -3,7 +3,7 @@ template: blog-post
 title: Starting a new blog..
 publishedDate: 2022-05-01T05:19:55.438Z
 description: So, I decided to give a try to this blogging thing, lets see how it goes!
-featured: false
+featured: true
 img: ../../static/images/man-sunrise.jpeg
 imgAlt: Fireworks
 tags:
