@@ -9,4 +9,8 @@ imgAlt: Fireworks
 tags:
   - new
 ---
+So, I decided to give a try to thing about blogging, lets see how it goes!
+
+...
+
 Note to myself: Learn to write longer post.
