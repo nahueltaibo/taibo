@@ -11,8 +11,6 @@ tags:
   - 3d-print
   - remote-control
 ---
-<!--StartFragment-->
-
 Some time ago I found in the curb a perfectly working Minnie Mouse Quad, This project is about making that Minnie Mouse Quad radio controlled.
 
 Why would I want to do that?
@@ -32,5 +30,3 @@ The main issue here, is controlling the stearing remotely. For that, I designed 
 You can find the 3D design of the servo linear actuator [here at Printables.com](https://aaf.li/f20cd)
 
 Once this is installed (as you can see it is done in the pics), the only remaining thing is to re work the connections, so we can control the motor from both the driver activated button, and the remote control receiver.
-
-<!--EndFragment-->
