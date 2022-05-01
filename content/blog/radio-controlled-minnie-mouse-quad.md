@@ -4,7 +4,7 @@ title: Radio Controlled Minnie Mouse Quad
 publishedDate: 2022-05-01T17:43:04.637Z
 description: Some time ago I found in the curb a perfectly working Minnie Mouse
   Quad, This project is about making that Minnie Mouse Quad radio controlled.
-featured: false
+featured: true
 img: ../../static/images/minnie-quad.jpg
 imgAlt: Minnie quad
 tags:
@@ -29,7 +29,7 @@ The benefit of using an already electric car, is that I don’t need to worry mu
 
 The main issue here, is controlling the stearing remotely. For that, I designed a servo linear actuator, that produces the same movement the stearing wheel would.
 
-You can find the thing [here](https://aaf.li/f20cd)
+You can find the 3D design of the servo linear actuator [here at Printables.com](https://aaf.li/f20cd)
 
 Once this is installed (as you can see it is done in the pics), the only remaining thing is to re work the connections, so we can control the motor from both the driver activated button, and the remote control receiver.
 
