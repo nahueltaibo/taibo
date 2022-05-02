@@ -6,6 +6,9 @@ import { SEO } from "../../components/seo";
 interface QueryData {
   markdownRemark: {
     html: string;
+    fields: {
+      slug: string;
+    };
     frontmatter: {
       title: string;
       tags: string[];
@@ -78,6 +81,9 @@ interface Page {
 export const Page: FunctionComponent<Page> = ({ data }) => {
   const {
     markdownRemark: {
+      fields: {
+        slug,
+      },
       html,
       frontmatter: {
         title,
@@ -91,12 +97,13 @@ export const Page: FunctionComponent<Page> = ({ data }) => {
       },
     },
   } = data;
-
+  debugger;
   return (
     <>
       <SEO title={title} image={img.src} description={description} />
       <BlogPost
         title={title}
+        slug={slug}
         tags={tags}
         img={img}
         imgAlt={imgAlt}
