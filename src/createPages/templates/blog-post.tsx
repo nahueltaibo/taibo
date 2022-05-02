@@ -97,7 +97,7 @@ export const Page: FunctionComponent<Page> = ({ data }) => {
       },
     },
   } = data;
-  debugger;
+
   return (
     <>
       <SEO title={title} image={img.src} description={description} />
