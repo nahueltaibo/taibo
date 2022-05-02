@@ -21,7 +21,7 @@ export const BlogPost: FunctionComponent<BlogPost> = ({
   children,
 }) => {
 
-  const location = window.location.href; 
+  const location = typeof window !== "undefined" ? window.location.href : '';
 
   return (
     <Layout>
