@@ -2,6 +2,7 @@ import React, { FunctionComponent } from "react";
 import { format } from "date-fns";
 import Image, { FluidObject } from "gatsby-image";
 import { Layout } from "../../components/layout";
+import { Disqus } from 'gatsby-plugin-disqus';
 
 interface BlogPost {
   title: string;
@@ -19,6 +20,9 @@ export const BlogPost: FunctionComponent<BlogPost> = ({
   publishedDate,
   children,
 }) => {
+
+  const location = window.location.href; 
+
   return (
     <Layout>
       <div className="">
@@ -49,6 +53,16 @@ export const BlogPost: FunctionComponent<BlogPost> = ({
             </div>
           </div>
         </div>
+        <Disqus
+          config={{
+            /* Replace PAGE_URL with your post's canonical URL variable */
+            url: { location },
+            /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+            identifier: { title },
+            /* Replace PAGE_TITLE with the title of the page */
+            title: { title },
+          }}
+        />
       </div>
     </Layout>
   );
