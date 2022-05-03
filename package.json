@@ -1,23 +1,22 @@
 {
-  "name": "gatsby-blog",
+  "name": "taibo",
   "version": "1.0.0",
-  "description": "Opinionated starter template to get started with a blog",
+  "description": "My adventures as a Maker and Software developer",
   "keywords": [
-    "gatsby",
-    "gatsby-starter",
-    "storybook"
+    "robotics",
+    "sorfware",
+    "maker"
   ],
-  "homepage": "https://github.com/yehjxraymond/gatsby-blog",
-  "license": "MIT",
+  "homepage": "https://taibo.ca",
   "author": {
-    "name": "Raymond Yeh",
-    "url": "https://geek.sg"
+    "name": "Nahuel Taibo",
+    "url": "https://taibo.ca"
   },
   "files": [],
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yehjxraymond/gatsby-blog"
+    "url": "https://github.com/nahueltaibo/taibo.git"
   },
   "scripts": {
     "dev": "npm-run-all -p dev:*",
