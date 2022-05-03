@@ -5,11 +5,14 @@ publishedDate: 2022-05-03T03:29:12.612Z
 description: As soon as I got my Raspberry Pi Zero W, I started thinking how to
   test it. I chose to use it as brain of one of those standard robot bases
   available online.
-featured: false
+featured: true
 img: ../../static/images/img_20170418_120138-730x350.jpg
 imgAlt: Aum robot
 tags:
-  - arduino;raspberrypi;python;robotics
+  - arduino
+  - raspberrypi
+  - python
+  - robotics
 ---
 As soon as I got my Raspberry Pi Zero W, I started thinking how to test it. I chose to use it as brain of one of those standard robot bases available online.
 
