@@ -12,7 +12,8 @@ featured: true
 img: ../../static/images/arduino-smart-car.jpg
 imgAlt: Arduino smart car
 tags:
-  - robotics;python;
+  - robotics
+  - python
 ---
 As I’m now working on a [Raspberry Pi Zero W](https://www.raspberrypi.org/products/pi-zero-w/) based robot, doing my first test on Python programming, I needed to port the function created previously in this [article](http://savagemakers.com/differential-drive-tank-drive-in-arduino/) for Arduino (c++).
 
