@@ -2,12 +2,9 @@
 template: blog-post
 title: Joystick to Differential Drive (Python)
 publishedDate: 2022-05-03T03:08:42.109Z
-description: As I’m now working on a [Raspberry Pi Zero
-  W](https://www.raspberrypi.org/products/pi-zero-w/) based robot, doing my
-  first test on Python programming, I needed to port the function created
-  previously in
-  this [article](http://savagemakers.com/differential-drive-tank-drive-in-arduino/) for
-  Arduino (c++).
+description: As I’m now working on a Raspberry Pi Zero W based robot, doing my
+  first test on Python programming, I needed to port the function created in my
+  previous post for Arduino (c++). This is the same but written on python
 featured: true
 img: ../../static/images/arduino-smart-car.jpg
 imgAlt: Arduino smart car
