@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: Aum2 – “Raspberry Pi Zero W” based robot
+title: "Aum2: Raspberry Pi Zero W based robot"
 publishedDate: 2022-05-03T03:29:12.612Z
 description: As soon as I got my Raspberry Pi Zero W, I started thinking how to
   test it. I chose to use it as brain of one of those standard robot bases
