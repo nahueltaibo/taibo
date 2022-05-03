@@ -51,10 +51,6 @@ I divided the code in these files, that I will be explaining one by one:
 * remoteControl.py
 * utils.py
 
-
-
-
-
 ### aum2.py
 
 This is the main entry point of the application, and contains the robot class:
@@ -169,8 +165,6 @@ class RCCommand(object):
             log.warn("Invalid message: {}".format(message))
 ```
 
-
-
 Again, the RemoteControl class, uses *twisted* framework to listen for UDP packages sent by the Android phone running  the [Wireless IMU app](https://play.google.com/store/apps/details?id=org.zwiener.wimu&hl=en). This application sends messages with this structure:
 
 890.71558, **3, 0.076, 9.809, 0.565**, 4, -0.559, 0.032, -0.134, 5, -21.660,-36.960,-28.140
@@ -179,7 +173,7 @@ I’m only interested in the part of the message I highlighted above, this would
 
 ### l298NDrive.py
 
-This is the file responsible to control the motors. For this it sends orders to the the [16 Servo driver](http://s.click.aliexpress.com/e/VvF23vn), which is connected to the [L298N Motor driver](http://s.click.aliexpress.com/e/Q7qFY3B). I think I will probably reusing this class on every Raspberry Pi robot I build. It’s really simple and makes what it needs without complicating anything.
+This is the file responsible to control the motors. For this it sends orders to the the [16 Servo driver](https://aaf.li/5d8e3), which is connected to the [L298N Motor driver](https://aaf.li/2df9b). I think I will probably reusing this class on every Raspberry Pi robot I build. It’s really simple and makes what it needs without complicating anything.
 
 ```python
 import Adafruit_PCA9685
@@ -279,13 +273,9 @@ self.pwm.set_pwm(self.in1, 0, 0)
 
 and when I do this:
 
-
-
 ```python
 self.pwm.set_pwm(self.in1, 0, self.MaxPwm) 
 ```
-
-
 
 *’m really telling the servo driver that that pin (in1) should be in ON during all the PWM cicle, (so I turn ON that pin)*
 
@@ -302,8 +292,6 @@ I use the real PWM pin, and set the pulse with that I was requested with the spe
 ### utils.py
 
 Finally the last peace of this. This doesn’t contain a class, but all the useful functions that I think I’ll be reusing in other places.
-
-
 
 ```python
 import math
@@ -373,13 +361,9 @@ def joystickToDiff(x, y, minJoystick, maxJoystick, minSpeed, maxSpeed):
     return (rightOut, leftOut)
 ```
 
-
-
 There are just two methods here, the first is a port from Arduino of the **map function**. It converts a value (v) within the specified input limits (in_min, in_max) to the corresponding value within the output range (out_min, out_max).
 
 I added limits for the input value, so I only accept a v, that is within the in_min and in_max.
-
- 
 
 The other function I have (joystickToDiff) is a little more complex, but its purpose is to convert from an joystick pair of input values, to the required speeds of the right and left motors of a Differential drive robot. This output is delivered already converted to the range of speeds specified as parameters. You can find more details on this part on this previous [article](https://taibo.ca/blog/joystick-to-differential-drive-python)
 
