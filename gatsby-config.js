@@ -114,7 +114,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-disqus`,
       options: {
-        shortname: `taibo-ca`
+        shortname: process.env.GATSBY_DISQUS_NAME
       }
     },
   ],

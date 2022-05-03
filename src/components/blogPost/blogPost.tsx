@@ -31,7 +31,6 @@ export const BlogPost: FunctionComponent<BlogPost> = ({
     },
   }
 
-  debugger;
   return (
     <Layout>
       <div className="">
@@ -59,12 +58,11 @@ export const BlogPost: FunctionComponent<BlogPost> = ({
           <div className="max-w-screen-lg">
             <div className="prose sm:prose-lg md:prose-xl text-gray-700">
               {children}
+              <DiscussionEmbed  {...disqusConfig} />
             </div>
           </div>
-
-          <DiscussionEmbed {...disqusConfig} />
         </div>
       </div>
-    </Layout>
+    </Layout >
   );
 };
