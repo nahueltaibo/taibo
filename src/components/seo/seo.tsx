@@ -40,7 +40,7 @@ export const SEO: React.FunctionComponent<SEO> = ({
     `
   );
 
-  const imagePath = image ? join(siteMetadata.siteUrl, image) : undefined;
+  const imagePath = image ? siteMetadata.siteUrl + image : undefined;
 
   const metaDescription = description || siteMetadata.description;
 
